@@ -23,7 +23,7 @@ def get_pay_slip(name: str, amount: float) -> Payslip:
 def main(args):  # pragma: no cover
     parser = argparse.ArgumentParser("Generate Payslip")
 
-    parser.add_argument("--name", dest="name", type=str, required = True, help="input fixed width file")
+    parser.add_argument("--name", dest="name", type=str, required = True, help="employee name")
     parser.add_argument("--amount", dest="amount", type=float, required=True, help="output file")
 
     options = parser.parse_args(args)
